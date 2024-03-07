@@ -1,0 +1,108 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Card styles */
+.card {
+    width: calc(45% - 20px);
+    background-color: #151963; /* Set the background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.card-header {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.card-body {
+    padding: 20px;
+    color: #ffffff;
+}
+
+.projectBtn {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid rgba(255, 255, 255, 0);
+    background-color: rgb(80, 10, 172);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  
+.projectBtn:hover {
+    background-color: rgb(197, 195, 251);
+    border-color: rgba(80, 10, 172);
+    color: rgb(70, 78, 194);
+}
+
+.gLink{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: middle;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #0366d6;
+    background-color: #fafbfc;
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+    transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition-property: color, background-color, border-color;
+
+}
+.gLink:hover {
+    color: #ffffff;
+    background-color: rgb(135, 44, 255);
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.1) 0px 1px 0px 0px, rgba(255, 255, 255, 0.03) 0px 1px 0px 0px inset;
+    transition-duration: 0.2s;
+}
+.homeImg{
+    width: 450px;
+    height: 200px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}

@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 5%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+header h1 {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+header nav {
+    display: flex;
+    gap: 30px;
+}
+header nav .anchor {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 99px;
+    transition: 0.3s;
+    color: white;
+}
+header nav a.active {
+    background: #5247B9;
+}
+header nav a:hover {
+    background: #5247B9;
+}
+header nav:hover > a:not(:hover) {
+    background: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, #D2E2FB 30%, #86A8DB);
+    position: relative;
+    overflow: hidden;
+}
+
+.home img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.home .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: #3B3291;
+    color: white;
+    z-index: 100;
+}
+.about h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.intro{
+    background-color: #11178a;
+    margin: 30px 20px 20px 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.intro:hover{
+    background-color: #151966;
+    
+}
+.introText{
+    padding: 30px 15px 30px 15px;
+}
+
+.skills{
+    margin: 50px 70px 20px 70px;
+
+}
+.skillContent{
+    background-color: #11178a;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+.skillContent:hover{
+    background-color: #151966;
+}
+
+.handles{
+    width: 50px;
+    height: 50px;
+    margin: 20px 20px 20px 20px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0 10px;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    header nav {
+        gap: 20px;
+    }
+    header nav a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    .home .title {
+        font-size: 60px;
+    }
+    .about {
+        padding: 30px;
+    }
+    .about h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0 5px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    header nav {
+        gap: 10px;
+    }
+    header nav a {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+    .home .title {
+        font-size: 40px;
+    }
+    .about {
+        padding: 20px;
+    }
+    .about h1 {
+        font-size: 24px;
+    }
+}
